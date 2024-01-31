@@ -1,0 +1,43 @@
+*{
+    font-family: "Georgia", Times, serif;
+}
+/* Improves readability of the header */
+h1{
+    font-size: 10vw;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    filter: contrast(150%)
+}
+/* Ensures images are correct size */
+img{
+    object-fit: cover;
+}
+
+/* Changes the size of key text depending on the size of the screen */
+.responsiveText{
+    font-size: 1em;
+}
+
+/* Adds a linear-gradient over the header image and sets it to the height of the viewport*/
+#showcase{
+    height: 100vh;
+
+    background-image: url(./img/braai.jpg);
+
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(img/braai.jpg);
+    background-size: cover;
+}
+/* Sets the height of the element to be the full screen */
+.fullScreen{
+    max-height: 100vh;
+}
+/* Fills the remaining amount of space */
+.fillRemaining{
+    flex-grow: 1;
+}
+
+/* Adds a border-radius to the google maps widget */
+#map{
+    border-radius: 10px;
+}
